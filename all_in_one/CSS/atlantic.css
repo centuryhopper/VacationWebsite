@@ -1,0 +1,696 @@
+.moreSpace {margin:2px;}
+
+.toggleRowColor {background-color: aquamarine;}
+
+.warningText {font-weight: bold; color: red}
+
+/* desktop */
+@media (min-width: 64em) {
+    body {
+        background-image: linear-gradient(#E0E0E0,#757575);
+        /* background-color: aquamarine; */
+        height: 100%;
+        background-size: cover;
+        color: #000001;
+        font-family: Arial;
+        background-repeat: no-repeat;
+    }
+
+    /* .desktop { display: static;} */
+    .DontShowContactsInDesktop {display: none;}
+    .tablet { display: none; }
+    .ddForMobile {display: none;}
+    .phoneNumDiv {margin-top: 10px;}
+
+    .reservationNavList {
+        margin-bottom: 50px;
+        position: relative;
+        left: 50px;
+    }
+
+    .reservationsContactAndPic {
+        position: relative;
+        left: 50px;
+    }
+
+    header.heading {
+        background-color: #000033;
+        color: #FFFFFF;
+        background-image: url(/images/sunset.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        line-height: 400%;
+        margin-left: 20px;
+        width: 110%;
+    }
+
+    header h1 {
+        text-indent: 0.5em;
+    }
+
+    h1 {
+        margin-bottom: 0;
+        font-family: Georgia;
+        text-align: center;
+    }
+
+    /* main {background-color: #005CE6;} */
+
+    p.spacing {
+        margin-bottom: 20px;
+    }
+
+    nav {
+        /* background-color: yellowgreen; */
+        line-height: 1.25em;
+        font-weight: bold;
+        text-align: left;
+        width: 290px;
+        margin: 5px 5px 10px 5px;
+        display: table-cell;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        /* position relative makes the element positioning
+        movable with top bottom left and right properties */
+        position: relative;
+        right: 40px;
+        margin: 20px 0 20px 0;
+    }
+
+    main li {font-size: 20px;}
+
+    .moveUp {
+        position: relative;
+        top: -290px;
+        left: 40px;
+    }
+
+    .moveUp2 {
+        position: relative;
+        top: -245px;
+        left: 40px;
+    }
+
+    .moveUpReservations {
+        position: relative;
+        top: -400px;
+        left: -10px;
+    }
+
+    .moveUpActivities {
+        position: relative;
+        top: -1780px;
+        left: 30px;
+    }
+
+    .moveUpAccommodations {
+        position: relative;
+        top: -930px;
+        right: -20px;
+    }
+
+    .moveDown {
+        position: relative;
+        top: 200px;
+    }
+
+    .moveRight {
+        position: relative;
+        left: 40px;
+    }
+
+    div nav a {
+        text-decoration: none;
+        font-size: 140%;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        color: #334DCC;
+    }
+
+    dd {
+        margin-bottom: 1.5em;
+    }
+
+    dt {
+        color: #000099;
+        font-size: 14pt;
+    }
+
+    div main {
+        display: table-cell;
+        vertical-align: center;
+        /* background-color: #7fffd4; */
+        font-size: 20px;
+        position: relative;
+        left: 20px;
+        padding-left: 50px;
+    }
+
+    div main ul {
+        font-family: 'Times New Roman';
+        font-size: 13pt;
+        list-style-image: url('/images/marker.gif');
+        bottom: 0;
+    }
+
+    div footer {
+        font-style: italic;
+        text-align: center;
+        font-family: Georgia;
+        bottom: 3%;
+        width: 100%;
+        background-size: cover;
+        font-size: 110%;
+        /* margin-top: 5px; */
+        /* background-image: linear-gradient(#E0E0E0,#757575); */
+        /* background-color: blue; */
+    }
+
+    .resort {
+        color: #005CE6;
+        font-weight: bold;
+    }
+
+    #wrapper { /* applied to a <div> element that wraps the entire content of each page of markup. */
+        width: 80%;
+        min-width: 975px;
+        max-width: 1300px;
+        left: 70px;
+        position: relative;
+    }
+
+    /* #indexpage-mainimage {
+        height: 300px;
+        width: 1010px;
+        background-image: url(/images/coast-main.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    } */
+    #indexpage-mainimage {
+        height: 300px;
+        width: 819px;
+        background-image: url(/images/coast-main.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #accommodationspage-mainimage {
+        height: 300px;
+        width: 821px;
+        background-image: url(/images/bungalow-main.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #activitiespage-mainimage {
+        height: 300px;
+        width: 821px;
+        background-image: url(/images/trail-main.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #navImage {
+        background-image: url(/images/lighthouse1.jpg);
+        height: 250px;
+        width: 230px;
+        background-repeat: no-repeat;
+        /* position: relative;
+        top: ; */
+    }
+
+    .indexTableSize, .accommodationsTableSize, .activitiesTableSize {
+        border-collapse: collapse !important;
+        border: 1px solid black !important;
+        /* border-spacing: 30px 55px !important; */
+        width: 230px !important;
+    }
+
+    .boxEmUp {
+        width: 230px;
+        height: 100px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        /* text-align: center; */
+        /* background-color: #005CE6; */
+        padding-left: 20px;
+    }
+
+    .noDefaultSpaces {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    table td, table th {
+        border: 2px solid #C2DFFF;
+    }
+
+    table.tableWidth {
+        width: 800px;
+        /* position: relative;
+        left: 100px; */
+        border-collapse: collapse;
+    }
+
+    td, th {
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background: #000099;
+        color: #EAEAEA;
+        padding: 5px;
+    }
+
+    .kayakTableMarginBottom {
+        margin-bottom: 20px;
+    }
+
+    .description, .tourStartTime {
+        text-align: left !important;
+        padding-left: 5px !important;
+    }
+
+    tr:nth-child(odd) {
+        background: #659EC7;
+    }
+
+    tr:nth-child(even) {
+        background: #56A5EC;
+    }
+
+    label {
+        /* float: left; */
+        text-align: right;
+        font-size: 15px;
+        /* margin: 15px 0 15px 25px; */
+    }
+
+    fieldset {
+        width: 110%;
+        border: 3px solid blue;
+        background-color: lightgray;
+        padding-left: 50px;
+        position: relative;
+
+    }
+
+    /* form input[type="text"] { height: 15px; } */
+
+    .emailLabel {position: relative; left: 30px}
+    .phoneLabel {position: relative; left: 35px}
+    .dateLabel {position: relative; left: 45px}
+    .timeLabel {position: relative; left: -5px}
+    .nightsLabel {position: relative; left: -40px}
+
+
+    .firstAndLastName {width: 30%; margin-left: 80px !important;}
+    .phone {width: 30%;margin-left: 115px !important;}
+    .email {width: 40%;margin-left: 110px !important;}
+    .date {width: 25%;margin-left: 127px !important;}
+    .time {width: 30%;margin-left: 79px !important;}
+    .nights {width: 10%;margin-left: 42px !important;}
+    .comments {margin-left: 80px !important;}
+
+
+    .mobileLineBreak {display: none;}
+
+    .formInputs { margin: 15px 0 15px 25px; border: 1px solid black; }
+
+    .debug {
+        background-color: #56A5EC;
+    }
+
+    .mobilePhoneNum { display: none;}
+
+    /* input { float: right; text-align: left; } */
+
+    input[type="reset"], input[type="submit"] {
+        font-size: 20px;
+        color: white;
+        padding: 8px;
+        margin: 15px 0 15px 25px;
+    }
+
+
+    .submitButtonColor { background-color: #00008B; }
+    .resetButtonColor { background-color: #6495ED; }
+}
+
+
+
+
+/* tablet  */   /*FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF */
+@media (min-width: 37.5em) and (max-width: 64em) {
+
+    .desktop { display: none;}
+
+    .ddForMobile {display: none;}
+
+    .mobilePhoneNum { display: none;}
+
+    #toggleDisplay { display: none;}
+
+    .mobileLineBreak {display: none;}
+
+    .tabletAndMobile {display: none;}
+
+    .phoneNumDiv {margin-top: 10px;}
+
+    label {
+        font-size: 25px;
+    }
+
+    dd {
+        margin-bottom: 1.5em;
+    }
+
+    dt {
+        color: #000099;
+        font-size: 14pt;
+    }
+
+    table td, table th {
+        border: 2px solid black;
+    }
+
+    th {
+        background: #000099;
+        color: #EAEAEA;
+        padding: 5px;
+    }
+
+    table.tableWidth {
+        width: 800px;
+        position: relative;
+        left: 100px;
+        border-collapse: collapse;
+    }
+
+    .birdWatchTable {margin-bottom: 10px;}
+
+    td, th {
+        padding: 10px;
+        text-align: center;
+    }
+
+    tr:nth-child(odd) { background: #E0E0E0;}
+
+    tr:nth-child(even) { background: #9f9f9f;}
+
+    .description, .tourStartTime {
+        text-align: left !important;
+        padding-left: 5px !important;
+    }
+
+    form {margin-bottom: 10px;}
+
+    fieldset {
+        text-align: justify;
+        /* width: 100%; */
+        border: 3px solid blue;
+        background-color: lightgray;
+        /* padding-left: 150px; */
+    }
+
+    .formInputs { margin: 15px 0 15px 25px; border: 1px solid black; }
+
+    .emailLabel {position: relative; left: 50px}
+    .phoneLabel {position: relative; left: 58px}
+    .dateLabel {position: relative; left: 77px}
+    .timeLabel {position: relative; left: -5px}
+    .nightsLabel {position: relative; left: -65px}
+    .commentsLabel {position: relative; bottom: 50px;}
+
+
+    .firstAndLastName {width: 30%;margin-left: 80px !important;}
+    .phone {width: 30%;margin-left: 140px !important;}
+    .email {width: 40%;margin-left: 130px !important;}
+    .date {width: 25%;margin-left: 160px !important;}
+    .time {width: 30%;margin-left: 79px !important;}
+    .nights {width: 10%;margin-left: 17px !important;}
+    .comments {margin-left: 80px !important;}
+
+    input[type="reset"], input[type="submit"] {
+        font-size: 20px;
+        color: white;
+        padding: 8px;
+        margin: 15px 0 15px 25px;
+    }
+
+    .submitButtonColor { background-color: #00008B; }
+    .resetButtonColor { background-color: #6495ED; }
+
+    body {
+        background-image: linear-gradient(#E0E0E0,#757575);
+        height: 100%;
+        background-size: cover;
+        color: #000001;
+        font-family: Arial;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+
+    header h1 {
+        text-indent: 0.5em;
+    }
+
+    h1 {
+        margin-bottom: 0;
+        font-family: Georgia;
+        text-align: center;
+    }
+
+    header.heading {
+        position: relative;
+        top: -10px;
+        background-color: #000033;
+        color: #FFFFFF;
+        background-image: url(/images/sunset.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        line-height: 400%;
+        width: 100%;
+    }
+
+    div nav a {
+        text-decoration: none;
+        font-size: 120%;
+        margin-bottom: 50px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 0.25em 0.75em 0.25em 0.75em;
+    }
+
+    .list {
+        font-family: 'Times New Roman';
+        font-size: 13pt;
+        list-style-image: url('/images/marker.gif');
+        bottom: 0;
+    }
+
+    .resort {
+        color: #005CE6;
+        font-weight: bold;
+    }
+
+    #wrapper {
+        min-width: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    h2 {
+        color: #334DCC;
+    }
+
+    main {
+        margin-left: 2px;
+    }
+
+    main li {font-size: 20px;}
+
+    nav {
+        display: block;
+        margin-left: 0;
+        font-weight: bold;
+        position: relative;
+        left: -40px;
+        /* right: 30px; */
+    }
+
+    .boxEmUp {
+        margin-top: 25px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        text-align: center;
+        margin-left: 2px;
+        margin-bottom: 10px;
+    }
+
+    #indexpage-mainimage {
+        height: 200px;
+        background-image: url(/images/coast-main.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #accommodationspage-mainimage {
+        height: 200px;
+        background-image: url(/images/bungalow-main.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #activitiespage-mainimage {
+        height: 200px;
+        background-image: url(/images/trail-main.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    div footer {
+        font-style: italic;
+        text-align: center;
+        font-family: Georgia;
+        bottom: 3%;
+        width: 100%;
+        background-size: cover;
+        font-size: 75%;
+    }
+}
+
+/* mobile phone */   /*FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF*/
+@media (max-width: 37.5em) {
+
+    nav { position: relative; left:-20px; }
+
+    nav ul li:nth-child(1) {border-top: 2px solid #FFE4C4;}
+
+    #toggleDisplay { display: none;}
+    .tabletAndMobile {display: none;}
+    .ddForDesktopAndTablet {display: none;}
+    table {display: none;}
+    .phoneNumDiv {margin-top: 10px;}
+    #rondo4 {display: none;}
+    #rondo6 {display: none;}
+
+
+    dd {
+        margin-bottom: 1.5em;
+    }
+
+    dt {
+        color: #000099;
+        font-size: 14pt;
+    }
+
+    label {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    form {margin-bottom: 10px;}
+
+    fieldset {
+        text-align: justify;
+        border: 3px solid blue;
+        background-color: lightgray;
+        padding-left: 50px;
+    }
+
+    form input[type="text"] {
+        /* width: 75px;*/
+        height: 10px;
+        margin-bottom: 15px;
+    }
+
+    .formInputs {border: 1px solid black; margin: 0 0 15px 10px;}
+    .formLabels {font-size: 12px;}
+
+    input[type="reset"], input[type="submit"] {
+        font-size: 10px;
+        color: white;
+        padding: 2px;
+        margin: 15px 0 15px 10px;
+    }
+    .submitButtonColor { background-color: #00008B; }
+    .resetButtonColor { background-color: #6495ED; }
+
+
+    body {
+        background-image: linear-gradient(#E0E0E0,#757575);
+        height: 100%;
+        background-size: cover;
+        color: #000001;
+        font-family: Arial;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+
+    header.heading {
+        text-align: center;
+        background-color: #000033;
+        color: #FFFFFF;
+        background-image: url(/images/sunset.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        line-height: 400%;
+        width: 100%;
+    }
+
+    h2 { color: #334DCC; }
+
+    .resort {
+        color: #005CE6;
+        font-weight: bold;
+    }
+
+    header { padding-top: 1em; }
+    main { padding: 0.1em 1em 0.1em 1em; }
+    main li {list-style-type: none; font-size: 15px; }
+    h1 {font-size: 1.5em; }
+
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid #FFE4C4;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav a { display: block; text-decoration: none; font-weight: bold; font-size: 1.5em;}
+    .desktopTabletNum { display: none; }
+    .boxEmUp {
+        margin-left: 20px;
+        margin-right: 20px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    div footer {
+        font-style: italic;
+        text-align: center;
+        font-family: Georgia;
+        bottom: 3%;
+        width: 100%;
+        background-size: cover;
+        font-size: 75%;
+    }
+}
+
+
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>The reservations page</title>
+        <link rel="stylesheet" type="text/css" href="/CSS/atlantic.css"/>
+        <link rel="icon" href="/images/favicon.ico"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="heading">
+                <h1>Atlantic Trails Resort</h1>
+            </header>
+            <nav>
+                <ul class="reservationNavList">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="accommodations.html">Accommodations</a>
+                    </li>
+                    <li>
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                        <a href="reservations.html">Reservations</a>
+                    </li>
+                    <li>
+                        <a href="entertainment.html">Entertainment Schedule</a>
+                    </li>
+                </ul>
+                    <div class="boxEmUp tabletAndMobile reservationsContactAndPic">
+                        <div class="noDefaultSpaces">
+                            <span class="resort">
+                                Atlantic Trails Resort
+                            </span>
+                            <br/>
+                                1227 Atlantic Trails Way
+                            <br/>
+                            Andover, Maine 04226
+                        </div>
+                        <p class="desktopTabletNum">888-555-5555</p>
+                        <p><a href="" class="mobilePhoneNum">888-555-5555</a></p>
+                    </div>
+                    <img class="reservationsContactAndPic" id="toggleDisplay" src="/images/harbor1.png" alt="harbor1" height="250" width="230"/>
+            </nav>
+            <main>
+                <h2>
+                    <span class="resort">Reservations at Atlantic Trails Resort</span>
+                </h2>
+                <h3>
+                    Contact Us Today To Plan Your Next Vacation
+                </h3>
+                <p>Required fields are marked with an asterisk *</p>
+                <form onreset="resetVars()" action="http://cs.ucf.edu/~markl/atlanticformreport.php" method="POST">
+                    <fieldset>
+                        <div>
+                            <label for="fname">*First Name:</label>
+                            <br class="mobileLineBreak"/>
+                            <input id="fname" class="formInputs firstAndLastName" name="firstName" type="text" autofocus required/>
+                        </div>
+
+                        <div>
+                            <label for="lname">*Last Name:</label>
+                            <br class="mobileLineBreak"/>
+                            <input id="lname" class="formInputs firstAndLastName" name="lastName" type="text" required/>
+                        </div>
+
+                        <div>
+                            <label class="emailLabel">*E-mail:</label>
+                            <br class="mobileLineBreak"/>
+                            <input class="formInputs email" name="email" type="email" required/>
+                        </div>
+
+                        <div>
+                            <label class="phoneLabel">Phone:</label>
+                            <br class="mobileLineBreak"/>
+                            <input class="formInputs phone" name="phone" type="tel"/>
+                        </div>
+
+                        <div>
+                            <label class="dateLabel">Date:</label>
+                            <br class="mobileLineBreak"/>
+                            <input class="formInputs date" name="date" type="date" />
+                        </div>
+
+                        <div>
+                            <label class="timeLabel">Arrival Time:</label>
+                            <br class="mobileLineBreak"/>
+                            <input class="formInputs time" name="time" type="time"/>
+                        </div>
+
+                        <div>
+                            <label class="nightsLabel">Number of Nights:</label>
+                            <br class="mobileLineBreak"/>
+                            <input class="formInputs nights" name="numNights" type="number"/>
+                        </div>
+
+                        <div>
+                            <label class="commentsLabel">*Comments:</label>
+                            <br class="mobileLineBreak"/>
+                            <textarea id="characters_left" onfocus="numChar()" onblur="hideDisplay()" class="formInputs comments" name="comments" maxlength="64" rows="2" cols="32" required></textarea>
+                        </div>
+
+
+                        <input type="submit" value="Submit" class="submitButtonColor"/>
+                        <input type="reset" value="Reset Form" class="resetButtonColor"/>
+                    </fieldset>
+                </form>
+            </main>
+            <div class="boxEmUp DontShowContactsInDesktop">
+                <div class="noDefaultSpaces">
+                    <span class="resort">
+                        Atlantic Trails Resort
+                    </span>
+                    <br/>
+                        1227 Atlantic Trails Way
+                    <br/>
+                    Andover, Maine 04226
+                </div>
+                <p class="desktopTabletNum">888-555-5555</p>
+                <p><a href="" class="mobilePhoneNum">888-555-5555</a></p>
+            </div>
+            <footer>
+                Copyright &copy; 2019 Atlantic Trails Resort
+                <br/>
+                <a href="leo@zhang.com">leo@zhang.com</a>
+                <div id="dateStuff"></div>
+            </footer>
+        </div>
+
+        <script src="/JS_Files/date-time.js" ></script>
+        <script src="/JS_Files/numCharacters.js" ></script>
+    </body>
+
+</html>
